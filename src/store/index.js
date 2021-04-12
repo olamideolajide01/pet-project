@@ -20,7 +20,7 @@ export default new Vuex.Store({
     },
     REMOVE_FROM_CART(state, item) {
       const idx = state.carts.findIndex((val) => (val.id == item.id));
-      state.carts.splice(item)
+      state.carts.splice(idx,1)
       // idx == 1 ? state.carts[idx].qty -= 1 : state.carts.splice(item)
     },
   },
