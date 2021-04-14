@@ -1,7 +1,7 @@
 <template>
 <v-app>
 <v-app-bar app >
-    <v-toolbar-title><h4>Yofo<span class="pt-4 red--text">PETs</span></h4> </v-toolbar-title>
+    <v-toolbar-title v-show="!$vuetify.breakpoint.xsOnly"><h4>Yofo<span class="pt-4 red--text">PETs</span></h4> </v-toolbar-title>
 
     <v-spacer></v-spacer>
 
